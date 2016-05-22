@@ -3026,8 +3026,30 @@ body {
   font-family: "Open Sans", Tahoma, Arial;
 }
 
+/* line 175, ../sass/main.scss */
+.brand-logo {
+  background-image: url("../img/iaa-logo.png");
+  width: 88px;
+  height: 100px;
+  display: block;
+  background-repeat: no-repeat;
+  visibility: visible;
+  position: relative;
+  clip: auto;
+  top: 10px;
+}
+@media screen and (min-width: 0px) and (max-width: 770px) {
+  /* line 175, ../sass/main.scss */
+  .brand-logo {
+    background-image: url("../img/iaa-logo-mobile.png");
+    position: relative;
+    left: 30px;
+    top: 5px;
+  }
+}
+
 /* styling navbar */
-/* line 176, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 #nav {
   width: 100%;
   position: static;
@@ -3041,7 +3063,18 @@ body {
   background: #0c715d;
   min-height: 100px;
 }
-/* line 190, ../sass/main.scss */
+@media screen and (min-width: 0px) and (max-width: 770px) {
+  /* line 194, ../sass/main.scss */
+  #nav {
+    min-height: 80px !important;
+  }
+}
+/* line 208, ../sass/main.scss */
+#nav .iaa-logo {
+  position: relative;
+  top: 5px !important;
+}
+/* line 213, ../sass/main.scss */
 #nav.affix {
   position: fixed;
   top: 0;
@@ -3051,107 +3084,126 @@ body {
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-/* line 196, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 #nav .navbar-brand {
   padding: 0;
-  height: 69px;
   line-height: 69px;
 }
-/* line 197, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #nav .navbar-brand img {
   margin-top: 0px;
   position: relative;
   top: 15px;
 }
-/* line 206, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 #nav.navbar-fixed-top {
   position: fixed;
   top: 0;
 }
-/* line 210, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 #nav .navbar-toggle {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 9px;
 }
-/* line 214, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 #nav .navbar-toggle i {
   font-size: 2em;
 }
-/* line 218, ../sass/main.scss */
+@media screen and (min-width: 0px) and (max-width: 770px) {
+  /* line 232, ../sass/main.scss */
+  #nav .navbar-toggle {
+    position: relative;
+    top: 12px;
+  }
+}
+/* line 244, ../sass/main.scss */
 #nav .navbar-nav {
   position: relative;
   top: 15px;
 }
-/* line 222, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 #nav .navbar-nav li a {
   text-transform: uppercase;
   padding-top: 25px;
   padding-bottom: 24px;
   font-family: "Open Sans", Tahoma, Arial;
   font-weight: bold;
-  color: #ffffff;
+  color: #BFCE93;
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-/* line 230, ../sass/main.scss */
+/* line 256, ../sass/main.scss */
 #nav .navbar-nav li a:hover {
-  color: #0c715d;
+  color: #F7F9F8;
   background: none;
 }
-/* line 235, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 #nav .navbar-nav li.social-nav {
   margin: 21px 0 4px 10px;
   border-left: 1px solid #eeeeee;
   padding-left: 15px;
 }
-/* line 239, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 #nav .navbar-nav li.social-nav a {
   float: left;
   padding: 5px 10px;
 }
-/* line 242, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 #nav .navbar-nav li.social-nav a i {
   font-size: 1.33333333em;
 }
-/* line 248, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 #nav .navbar-nav li.active a {
   color: #0c715d;
 }
 
-/* line 256, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .iaa_space_row {
   margin-top: 50px;
 }
 
-/* line 259, ../sass/main.scss */
-.iaa_header_1, .iaa_insurance_header h1 {
-  margin-left: 100px;
-}
 @media screen and (min-width: 1600px) and (max-width: 1920px) {
-  /* line 259, ../sass/main.scss */
+  /* line 285, ../sass/main.scss */
   .iaa_header_1, .iaa_insurance_header h1 {
     font-size: 42px !important;
     margin-left: 120px;
   }
 }
 
-/* line 267, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+}
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  /* line 294, ../sass/main.scss */
+  h1 {
+    font-size: 42px;
+    position: relative;
+    font-weight: 300;
+    left: 50px;
+  }
+}
+
+/* line 308, ../sass/main.scss */
 .iaa_insurance_header {
   margin-top: 50px;
   margin-bottom: 60px;
 }
-/* line 270, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 .iaa_insurance_header h1 {
   overflow: hidden;
   text-align: center;
+  font-size: 42px;
   position: relative;
-  left: -60px;
+  font-weight: 300;
 }
 @media screen and (min-width: 1600px) and (max-width: 1920px) {
-  /* line 270, ../sass/main.scss */
+  /* line 311, ../sass/main.scss */
   .iaa_insurance_header h1 {
     font-size: 42px;
     position: relative;
@@ -3159,7 +3211,7 @@ body {
     left: 50px;
   }
 }
-/* line 283, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .iaa_insurance_header h1:before,
 .iaa_insurance_header h1:after {
   background-color: #EAEAEA;
@@ -3170,111 +3222,50 @@ body {
   vertical-align: middle;
   width: 50%;
 }
-/* line 293, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 .iaa_insurance_header h1:before {
   right: 0.5em;
   margin-left: -68%;
 }
-/* line 297, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 .iaa_insurance_header h1:after {
   left: 0.5em;
   margin-right: -50%;
 }
 
-/* line 306, ../sass/main.scss */
-.iaa_insurance_packages .pricing ul li, .iaa_insurance_packages .price-black ul li {
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (min-width: 770px) and (max-width: 1920px) {
+  /* line 349, ../sass/main.scss */
+  .iaa_insurance_packages .pricing ul li, .iaa_insurance_packages .price-black ul li {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
 }
-/* line 311, ../sass/main.scss */
-.iaa_insurance_packages .pricing .unit, .iaa_insurance_packages .price-black .unit {
-  width: 40%;
+@media screen and (min-width: 770px) and (max-width: 1920px) {
+  /* line 356, ../sass/main.scss */
+  .iaa_insurance_packages .pricing .unit, .iaa_insurance_packages .price-black .unit {
+    width: 30%;
+  }
 }
-/* line 321, ../sass/main.scss */
+/* line 369, ../sass/main.scss */
 .iaa_insurance_packages .price-black {
   background-color: #000000;
 }
-/* line 324, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 .iaa_insurance_packages .price-black .price-body {
   background-color: #ffffff;
 }
-/* line 329, ../sass/main.scss */
+/* line 377, ../sass/main.scss */
 .iaa_insurance_packages .btn-black {
   background-color: #000000;
   color: white;
   border-color: #000000;
 }
-/* line 334, ../sass/main.scss */
+/* line 382, ../sass/main.scss */
 .iaa_insurance_packages .btn-black:hover {
   background-color: #424040;
   border-color: #000000;
 }
-/* line 340, ../sass/main.scss */
+/* line 388, ../sass/main.scss */
 .iaa_insurance_packages .fa-times {
   color: red;
-}
-
-/* line 345, ../sass/main.scss */
-.social {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 350, ../sass/main.scss */
-.social ul {
-  margin: 0;
-  padding: 5px;
-}
-
-/* line 355, ../sass/main.scss */
-.social ul li {
-  margin: 5px;
-  list-style: none outside none;
-  display: inline-block;
-}
-
-/* line 361, ../sass/main.scss */
-.social i {
-  width: 40px;
-  height: 40px;
-  color: #FFF;
-  background-color: #909AA0;
-  font-size: 22px;
-  text-align: center;
-  padding-top: 12px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  -ms-transition: all ease 0.3s;
-}
-
-/* line 380, ../sass/main.scss */
-.social i:hover {
-  color: #FFF;
-  text-decoration: none;
-  transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  -ms-transition: all ease 0.3s;
-}
-
-/* line 389, ../sass/main.scss */
-.social .fa-youtube {
-  background: #FF1F25;
-}
-
-/* line 393, ../sass/main.scss */
-.social .fa-facebook {
-  background: #4060A5;
-}
-
-/* line 397, ../sass/main.scss */
-.social .fa-twitter {
-  background: #00ABE3;
 }

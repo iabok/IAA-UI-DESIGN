@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home page</title>
-  <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,800" rel="stylesheet" type="text/css">
+  <title>IAA | Home</title>
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400,300italic,300" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.css" media="all">
   <link rel="stylesheet" href="css/font-awesome.min.css" media="all">
@@ -80,6 +78,9 @@
     .social .fa-twitter {
         background: #00ABE3;
     }
+    .carousel-inner{
+      max-height: 768px;
+    }
   </style>
 </head>
 <body>
@@ -93,31 +94,41 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">
-           <img src="img/iaa-logo.png" class="creativity-logo" alt="iaa logo">
-        </a>
+        <a class="navbar-brand brand-logo" href="index.html" ></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">IMG</a></li>
+          <li><a href="#"><i class="fa fa-home fa-2x"></i>&nbsp;<span style="position:relative; top:-5px;">Home</span></a></li>
+          <li><a href="#"><i class="fa fa-info fa-2x"></i>&nbsp;<span style="position:relative; top:-5px;">How it works</span></a></li>
+          <li><a href="#"><i class="fa fa-user-plus fa-2x"></i>&nbsp;<span style="position:relative; top:-5px;">Register</span></a></li>
+          <li><a href="#"><i class="fa fa-sign-in fa-2x"></i>&nbsp;<span style="position:relative; top:-5px;">Login</span></a></li>
+          <li><a href="#"><i class="fa fa-link fa-2x"></i>&nbsp;<span style="position:relative; top:-5px;">IMG</span></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
   <div class="iaa_img_slider" style="margin-top: 100px;">
-    <div id="foo">
-      <ul class="slideme">
-      <li><img src="img/1.jpg"/></li>
-      <li><img src="img/2.jpg"/></li>
-      <li><img src="img/3.jpg"/></li>
-      <li><img src="img/4.jpg"/></li>
-      </ul>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item"><img src="img/1.jpg"></div>
+        <div class="item"><img src="img/2.jpg"></div>
+        <div class="item active"><img src="img/3.jpg"></div>
+        <div class="item"><img src="img/4.jpg"></div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </div>
     
   </div>
@@ -126,9 +137,7 @@
       <!-- Insurance packages-->
       <div class="row iaa_space_row">
         <div class="col col-md-12 col-lg-12">
-          <div class="iaa_insurance_header">
-            <h1>Insurance Packages</h1>
-          </div>
+          <h1 style="text-align:center; position:relative; top:-30px;">Insurance Packages</h1>
         </div>
       </div>
     </div>
@@ -137,7 +146,7 @@
       <!-- first Row -->
       <div class="row">
         <div class="iaa_insurance_packages">
-          <div class="col-md-10 col-md-push-2">
+          <div class="col-md-12">
               <div class="pricing">
                 <ul>
                   <li class="unit price-primary">
@@ -149,7 +158,10 @@
                       <p>Premium</p>
                       <ul>
                         <li><i class="fa fa-check"></i>Inpatient UGX 7.2m at IHK, Outpatient UGX 2m</li> 
-                        <li><i class="fa fa-check"></i>Semi private room</li> 
+                        <li><i class="fa fa-check"></i>Semi private room</li>
+                        <li><i class="fa fa-times"></i>International travel cover up to $200,000</li>
+                        <li><i class="fa fa-times"></i>Wellness cover</li>
+                        <li><i class="fa fa-times"></i>Emergency air evacuation</li>
                       </ul>
                     </div>
                     <div class="price-foot">
@@ -166,6 +178,9 @@
                       <ul>
                         <li><i class="fa fa-check"></i>Inpatient UGX 7.2m at IHK, Outpatient UGX 2m</li>
                         <li><i class="fa fa-check"></i>Semi private room</li>
+                        <li><i class="fa fa-times"></i>International travel cover up to $200,000</li>
+                        <li><i class="fa fa-times"></i>Wellness cover</li>
+                        <li><i class="fa fa-times"></i>Emergency air evacuation</li>
                     </div>
                     <div class="price-foot">
                       <button type="button" class="btn btn-primary">Buy Now</button>
@@ -183,7 +198,7 @@
                         <li><i class="fa fa-check"></i>Private room</li>
                         <li><i class="fa fa-check"></i>International travel cover up to $200,000</li>
                         <li><i class="fa fa-check"></i>Wellness cover</li>
-                        <li><i class="fa fa-times"></i>Emergency air evacuation</li> \
+                        <li><i class="fa fa-times"></i>Emergency air evacuation</li>
                       </ul>
                     </div>
                     <div class="price-foot">
@@ -247,6 +262,25 @@
                       <button type="button" class="btn btn-warning">Buy Now</button>
                     </div>
                   </li>
+                  <li class="unit price-warning">
+                    <div class="price-title">
+                      <h3>UGX 625,000</h3>
+                    </div>
+                    <div class="price-body">
+                      <h4>Taasa</h4>
+                      <p>Premium</p>
+                      <h3 style="font-size:18px;">How it works</h3>
+                      <p>All you have to do is pay the premium which applies to the cover you want, for the number of members you need to cover. </p>
+                      <br><p>Your TAASA sales agent can advise. Combined inpatient and outpatient cover starts at just <strong>UGX 625,000</strong> annually per member, or around <strong>UGX 1,000</strong> per day. </p><br>
+                      <p>You can also choose to pay in monthly instalments.</p>
+                      <h3 style="font-size:18px;">How do i register?</h3>
+                      <p>Simply fill out a membership registration form providing all details of yourself and dependants.</p><br>
+                      <p>No photos are required since identification of members is by use of SMART CARD, which requires finger print authentication </p>
+                    </div>
+                    <div class="price-foot">
+                      <button type="button" class="btn btn-warning">Buy Now</button>
+                    </div>
+                  </li>
                 </ul>
               </div>
               <h3 style="color:red;">Note:</h3>
@@ -266,12 +300,12 @@
       <!-- Second Row -->
     </div>
   </div>
-    <div class="iaa_tassa_content" style="min-height: 620px; background-color: #ffffff; background:url('img/6.jpg');">
+    <div class="iaa_tassa_content" style="min-height: 480px; background-color: #ffffff; background:url('img/6.jpg');">
        <div class="container"> 
         <!-- Insurance packages-->
         <div class="row iaa_space_row">
           <div class="col col-md-12 col-lg-12">
-              <h1 style="text-align:center; color:#ffffff;">TAASA</h1>
+              <h1 style="text-align:center; color:#ffffff; font-weight:700;">TAASA</h1>
           </div>
         </div>
         <div class="row">
@@ -290,16 +324,13 @@
         </div>
       </div>
     </div>
-
     <!-- More about us -->
-    <div class="iaa_more_content" style="min-height: 650px; background: #ffffff; margin-top: 50px;">
+    <div class="iaa_more_content" style="min-height: 480px; background: #ffffff; margin-top: 30px;">
       <div class="container"> 
         <!-- Insurance packages-->
         <div class="row iaa_space_row">
           <div class="col col-md-12 col-lg-12">
-            <div class="iaa_insurance_header">
-              <h1 style="text-align:center;">More About Us</h1>
-            </div>
+            <h1 style="text-align:center; position:relative; top:-30px;">More About Us</h1>
           </div>
         </div>
         <div class="row">
@@ -322,75 +353,57 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
   
   <footer> 
-        <div class="footer">
-          <div class="container">
-            <div class="clearfix">
-              <div class="footer-logo"><a href="#"><img src="img/iaa-logo.png"></a></div>
-              <dl class="footer-nav">
-                <dt class="nav-title">About IAA</dt>
-                <dd class="nav-item" style="color:white; font-weight: 200;">
-                  IAA Healthcare is the leading facility-based Health Membership
-                  Organization (HMO) in Uganda with a client base of
-                  over 44,000 members and over 350 companies. Members
-                  include...
-                </dd>
-                <dd class="nav-item"><a href="#">Read more</a></dd>
-              </dl>
-              <dl class="footer-nav" style="color:white; font-weight: 200;">
-                <dt class="nav-title">Contact Us</dt>
-                <dd class="nav-item">
-                  Plot 37 Yusuf Lule Road, Kampala. Opposite Golf Course. P.O.Box 8177 Kampala, Uganda
-                   +256(0) 312 188888
-                  Watsup +256 775 123 123
-                  iaa@img.co.ug
-                  http://iaa.img.co.ug
-                </dd>
-              </dl>
-              <dl class="footer-nav">
-                <dt class="nav-title">Find us</dt>
-                <dd class="nav-item">
-                  <div class="social">
-                  <ul>
-                    <li>
-                      <a href="http://www.facebook.com/pages/IAA-Healthcare-Uganda/186599908164579"><i class="fa fa-lg fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="http://twitter.com/dasiima"><i class="fa fa-lg fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="http://youtube.com/IAA-Healthcare-Uganda"><i class="fa fa-lg fa-youtube"></i></a>
-                    </li>
-                  </ul>
-                </div>
-                </dd>
-              </dl>
+    <div class="footer">
+      <div class="container">
+        <div class="clearfix">
+          <dl class="footer-nav">
+            <dt class="nav-title">About IAA</dt>
+            <dd class="nav-item" style="color:white; font-weight: 200;">
+              IAA Healthcare is the leading facility-based Health Membership
+              Organization (HMO) in Uganda with a client base of
+              over 44,000 members and over 350 companies. Members
+              include...
+            </dd>
+            <dd class="nav-item"><a href="#">Read more</a></dd>
+          </dl>
+          <dl class="footer-nav" style="color:white; font-weight: 200;">
+            <dt class="nav-title">Contact Us</dt>
+            <dd class="nav-item">
+              Plot 37 Yusuf Lule Road, Kampala. Opposite Golf Course. P.O.Box 8177 Kampala, Uganda
+               +256(0) 312 188888
+              Watsup +256 775 123 123
+              iaa@img.co.ug
+              http://iaa.img.co.ug
+            </dd>
+          </dl>
+          <dl class="footer-nav">
+            <dt class="nav-title">Find us</dt>
+            <dd class="nav-item">
+              <div class="social">
+              <ul>
+                <li>
+                  <a href="http://www.facebook.com/pages/IAA-Healthcare-Uganda/186599908164579"><i class="fa fa-lg fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/dasiima"><i class="fa fa-lg fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="http://youtube.com/IAA-Healthcare-Uganda"><i class="fa fa-lg fa-youtube"></i></a>
+                </li>
+              </ul>
             </div>
-            <div class="footer-copyright text-center">Copyright © 2016 IAA. All rights reserved.</div>
-          </div>
-        </div> 
+            </dd>
+          </dl>
+        </div>
+        <div class="footer-copyright text-center">Copyright © 2016 IAA. All rights reserved.</div>
+      </div>
+    </div> 
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="js/jquery.slideme2.js"></script>
-  <script>
-  $(document).ready(function(){
-    $('#foo').slideme({
-          arrows:false, 
-          autoslide : true,
-          loop : true,
-          speed : 100,
-          transition : 'zoom',
-          resizable: {
-            width: 1920,
-            height: 650,
-          }
-    });
-  });
-    
-  </script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
